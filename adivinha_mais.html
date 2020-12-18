@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<input/> 
+<button>Compare com o meu segredo</button>
+
+<script>
+
+	var segredo = Math.round(Math.random() * 10);
+
+	var input = document.querySelector("input"); //pega do mundo html
+	input.focus();
+
+	function verifica() { //senao aparece o alert sem nem clicar no button primeiro
+
+		if (input.value == segredo) {		
+			alert("Você ACERTOU!")
+		}
+		else {
+			alert("Você ERROU!!!!");
+		}
+
+		input.value = ""; //pra limpar depois da tentiva da pessoa
+		input.focus(); //pra pintar pra pessoa colocar de novo o número
+	}
+
+	var button = document.querySelector("button"); //por dentro do query fica o nome da tag
+
+	button.onclick = verifica; //sem parênteses para não chamar a função e trazer o alert à tona
+
+</script>
