@@ -1,0 +1,24 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = 'darkgreen'; //cabeca
+	pincel.fillRect(0, 0, 600, 400);
+
+	pincel.fillStyle = 'black'; //olho1
+	pincel.fillRect(125, 90, 100, 100);
+
+	pincel.fillStyle = 'black'; //olho2
+	pincel.fillRect(355, 90, 100, 100);
+
+	pincel.fillStyle = 'black'; //nariz
+	pincel.fillRect(225, 190, 130, 100);
+
+	pincel.fillStyle = 'black'; //boca1
+	pincel.fillRect(175, 240, 55, 200);
+
+	pincel.fillStyle = 'black'; //boca2
+	pincel.fillRect(355, 240, 54,200);
+</script>
